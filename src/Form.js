@@ -12,17 +12,17 @@ const Form = () => {
                 name="textfield"
                 placeholder="First name"
                 />
-                <label htmlFor="lname">Last name</label>
-                <input id="lname"
-                type="text"
-                name="textfield"
-                placeholder="Last name"
-                />
                 <label htmlFor="email">E-mail</label>
                 <input id="email"
                 type="text"
                 name="textfield"
                 placeholder="E-mail"
+                />
+                <label htmlFor="role">Role</label>
+                <input id="role"
+                type="text"
+                name="textfield"
+                placeholder="Role"
                 />
             </form>
             <button>Submit</button>

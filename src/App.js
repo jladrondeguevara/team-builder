@@ -1,25 +1,26 @@
 import React, {useState} from 'react';
-import logo from './logo.svg';
+import ReactDOM from "react-dom";
 import './App.css';
 import TeamList from './TeamList';
 import Form from './Form';
 
 function App() {
-  const [member, setMembers] = useState([
+  const [members, setMembers] = useState([
     {
+      id: 1,
       fname: "Jeovanni", 
       email: "jeovannildg@gmail.com", 
       role: "CEO"
     }
   ]);
-  const addMember = memberObjParam => {
-    setMembers([...member, {...memberObjParam, id: Date.now()}])
-  }
+  const addNewMember = memberObjParam => {
+    setMembers([...members, {...memberObjParam, id: Date.now()}]);
+  };
   return (
     <div className="App">
       <h1>Team Members</h1>
-      <TeamList/>
-      <Form/>
+      <TeamList members={members}/>
+      <Form addNewMember={addNewMember}/>
     </div>
   );
 }

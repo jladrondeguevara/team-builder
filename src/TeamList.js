@@ -13,8 +13,7 @@ const TeamList = (props) => {
                     <p>{member.role}</p>
                 </div>
             ))}
-        </div>
-        
+        </div>  
     );
 };
 

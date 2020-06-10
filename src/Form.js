@@ -1,7 +1,13 @@
-import React from "react";
+import React, {useState} from "react";
 import './Form.css'
 
-const Form = () => {
+const Form = (props) => {
+    const [member, setMember] = useState("");
+    
+    const handleChanges = event => {
+        setMember({...member, [event.target.fname]: event.target.value})
+    }
+
     return (
         <div className="formDiv">
             <form>

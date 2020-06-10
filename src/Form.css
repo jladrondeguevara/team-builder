@@ -1,12 +1,13 @@
-.formDiv{
-    margin: 5rem 20rem 0rem 20rem;
-    padding: 2rem;
-    background-color: #5295ff;
-}
+/* .formDiv{
+    
+} */
 form {
     margin: 20px 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin: 5rem 20rem 0rem 20rem;
+    padding: 2rem;
+    background-color: #5295ff;
 }
